@@ -37,7 +37,7 @@ module Spree
       end
       current_ability.can [:read], Spree::State
       current_ability.can [:read], Spree::Country
-
+      current_ability.can [:read], Spree::Variant
     end
 
     define_method('default-admin-permissions') do |current_ability, user|
